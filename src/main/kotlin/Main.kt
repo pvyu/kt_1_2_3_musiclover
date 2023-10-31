@@ -11,7 +11,7 @@ fun main() {
                 (amount >= sumFor_5_percent) -> (amount * 0.95).toInt()
                 (amount >= sumFor_100_rub) -> amount - 100
                 else -> amount
-    }
+            }
     if (isMusiclover) {
         total = (total * 0.99).toInt()
     }
@@ -19,5 +19,5 @@ fun main() {
 
     println("Сумма покупки $amount")
     println("Сумма скидки $discount")
-    println("К оплате $discount")
+    println("К оплате $total")
 }
